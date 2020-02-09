@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 398}
   m_MaxSize: {x: 18008, y: 14048}
   vertical: 0
-  controlID: 12
+  controlID: 75
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 511, y: 398}
   m_MaxSize: {x: 14006, y: 14048}
   vertical: 0
-  controlID: 13
+  controlID: 26
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -190,7 +190,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 398}
   m_MaxSize: {x: 10004, y: 14048}
   vertical: 1
-  controlID: 14
+  controlID: 27
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -309,20 +309,20 @@ MonoBehaviour:
     m_SceneHandles: 
     m_ShowAllHits: 0
     m_SearchArea: 1
-    m_Folders:
-    - Assets/Scenes
+    m_Folders: []
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: /Users/Lifeowner/Documents/Github/Mini-game-EL645-
+  m_LastProjectPath: /Users/Lifeowner/Google Drive/Kent University/MTD/Year 3/Final
+    Year Project/AriadnesThread/Ariadne's Thread (Video Game)
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: b6280000
     m_LastClickedID: 10422
-    m_ExpandedIDs: 000000008c220000fa2600001a270000c0270000182800003e280000442800006e28000010290000442900008a290000cc2900002e2a0000682a0000962a0000e02a0000e82a0000122b0000dc2b0000022c0000ce2e0000d02e0000d22e0000d42e0000d62e0000
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -350,7 +350,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000008c220000fa2600001a270000c0270000182800003e280000442800006e28000010290000442900008a290000cc290000682a0000962a0000e02a0000e82a0000122b0000dc2b0000022c0000ce2e0000d02e0000d22e0000d42e0000d62e0000
+    m_ExpandedIDs: ffffffffda270000e02d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -488,13 +488,13 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_WindowGUID: 939011c535f1f4c06a8ff55e155be490
   m_SceneLighting: 1
-  m_2DMode: 1
+  m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.10221915, y: 1.7232783, z: 0.7029217}
+    m_Target: {x: -110.98819, y: -6.6616316, z: 85.98056}
     speed: 2
-    m_Value: {x: -0.10221915, y: 1.7232783, z: 0.7029217}
+    m_Value: {x: -110.98819, y: -6.6616316, z: 85.98056}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -514,25 +514,25 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 0
-      speed: 2
-      m_Value: 0
-    zGrid:
       m_Target: 1
       speed: 2
       m_Value: 1
+    zGrid:
+      m_Target: 0
+      speed: 2
+      m_Value: 0
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: 0.18069817, y: -0.807448, z: 0.46640158, w: 0.3128085}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: 0.18069784, y: -0.8074466, z: 0.46640074, w: 0.31280795}
   m_Size:
-    m_Target: 14.296397
+    m_Target: 30.265182
     speed: 2
-    m_Value: 14.296397
+    m_Value: 30.265182
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_ShowGlobalGrid: 1
   m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
@@ -576,10 +576,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -960
-    m_HBaseRangeMax: 960
-    m_VBaseRangeMin: -540
-    m_VBaseRangeMax: 540
+    m_HBaseRangeMin: -467
+    m_HBaseRangeMax: 467
+    m_VBaseRangeMin: -245.5
+    m_VBaseRangeMax: 245.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -599,7 +599,7 @@ MonoBehaviour:
       y: 17
       width: 934
       height: 491
-    m_Scale: {x: 0.45462966, y: 0.45462963}
+    m_Scale: {x: 1, y: 1}
     m_Translation: {x: 467, y: 245.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -607,12 +607,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1027.2097
-      y: -540
-      width: 2054.4194
-      height: 1080
+      x: -467
+      y: -245.5
+      width: 934
+      height: 491
     m_MinimalGUI: 1
-  m_defaultScale: 0.45462963
+  m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 934, y: 508}

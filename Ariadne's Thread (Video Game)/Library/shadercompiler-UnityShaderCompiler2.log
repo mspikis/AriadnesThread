@@ -1,0 +1,13 @@
+Base path: /Applications/Unity/Hub/Editor/2018.4.3f1/Unity.app/Contents
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=14 insize=1386 outsize=6489 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=6525 outsize=1317 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=1484 outsize=7489 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Unhandled exception: Protocol error - unexpected end of data (did the Editor crash?)
+
+Quitting shader compiler process
