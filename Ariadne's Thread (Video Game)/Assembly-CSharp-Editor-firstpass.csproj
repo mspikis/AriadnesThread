@@ -66,6 +66,15 @@
     <Compile Include="Assets\Standard Assets\Editor\Water\Water4\SpecularLightingEditor.cs" />
     <Compile Include="Assets\Standard Assets\Editor\Water\Water4\WaterBaseEditor.cs" />
     <Compile Include="Assets\Standard Assets\Editor\Water\Water4\WaterEditorUtility.cs" />
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>/Users/Lifeowner/Google Drive/Kent University/MTD/Year 3/Final Year Project/AriadnesThread/Ariadne's Thread (Video Game)/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>/Users/Lifeowner/Google Drive/Kent University/MTD/Year 3/Final Year Project/AriadnesThread/Ariadne's Thread (Video Game)/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>/Users/Lifeowner/Google Drive/Kent University/MTD/Year 3/Final Year Project/AriadnesThread/Ariadne's Thread (Video Game)/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/Lifeowner/Google Drive/Kent University/MTD/Year 3/Final Year Project/AriadnesThread/Ariadne's Thread (Video Game)/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -74,6 +83,9 @@
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>/Users/Lifeowner/Google Drive/Kent University/MTD/Year 3/Final Year Project/AriadnesThread/Ariadne's Thread (Video Game)/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>/Users/Lifeowner/Google Drive/Kent University/MTD/Year 3/Final Year Project/AriadnesThread/Ariadne's Thread (Video Game)/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>/Users/Lifeowner/Google Drive/Kent University/MTD/Year 3/Final Year Project/AriadnesThread/Ariadne's Thread (Video Game)/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
