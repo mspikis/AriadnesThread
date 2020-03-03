@@ -63,24 +63,25 @@ Material:
     - _CullOff: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _Distort: 100
+    - _Distort: 41.2
     - _DstBlend: 0
     - _Float1: 2
     - _Float2: 3
-    - _Fresnel: 60
+    - _Fresnel: 32
     - _FresnelIntensity: 61
-    - _FresnelWidth: 1.27
+    - _FresnelWidth: 1.31
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Hold: 2
-    - _IntersectionThreshold: 0.59
+    - _IntersectionThreshold: 0.77
     - _MaskClipValue: -1.4
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Offset: 0
     - _Op: 0
+    - _Outline: 0.03
     - _Parallax: 0.02
     - _Range: 0.2
     - _RimPower: 51
@@ -104,7 +105,8 @@ Material:
     - _Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
     - _Color0: {r: 1, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _MainColor: {r: 0.3647059, g: 0.2834804, b: 0.035294108, a: 0.441}
+    - _MainColor: {r: 1, g: 0.6805618, b: 0.033018887, a: 0.441}
+    - _OutlineColor: {r: 1, g: 0.2216981, b: 0.2216981, a: 1}
     - _intersectColor: {r: 1, g: 0, b: 0, a: 1}
     - _node_4016: {r: 0.034482475, g: 0, b: 1, a: 1}
     - _node_5050: {r: 0, g: 0, b: 0, a: 0}

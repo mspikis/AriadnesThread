@@ -60,7 +60,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ChallengeCanvas.cs" />
     <Compile Include="Assets\Scripts\ai.cs" />
+    <Compile Include="Assets\Scripts\Constants.cs" />
+    <Compile Include="Assets\Scripts\ForceFieldDoor.cs" />
+    <Compile Include="Assets\Scripts\Narration\Dialogue.cs" />
+    <Compile Include="Assets\Scripts\Narration\DialogueTrigger.cs" />
+    <Compile Include="Assets\Scripts\Narration\NarrationManager.cs" />
     <Compile Include="Assets\Scripts\SceneController.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
