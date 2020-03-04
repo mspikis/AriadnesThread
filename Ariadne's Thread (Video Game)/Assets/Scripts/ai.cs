@@ -133,7 +133,7 @@ public class ai : MonoBehaviour
     }
     public void DestroyDoor()
     {
-        Destroy(closestDoor.gameObject);
+        Destroy(closestDoor.transform.parent.gameObject);
     }
 
 }
