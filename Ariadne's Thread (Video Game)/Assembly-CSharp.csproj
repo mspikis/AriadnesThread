@@ -60,10 +60,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Challenge.cs" />
+    <Compile Include="Assets\Player.cs" />
     <Compile Include="Assets\Scripts\ai.cs" />
-    <Compile Include="Assets\Scripts\ChallengeCanvas.cs" />
     <Compile Include="Assets\Scripts\Constants.cs" />
     <Compile Include="Assets\Scripts\ForceFieldDoor.cs" />
+    <Compile Include="Assets\Scripts\Interact.cs" />
     <Compile Include="Assets\Scripts\Narration\Dialogue.cs" />
     <Compile Include="Assets\Scripts\Narration\DialogueTrigger.cs" />
     <Compile Include="Assets\Scripts\Narration\NarrationManager.cs" />

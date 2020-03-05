@@ -12,128 +12,94 @@ public class ai : MonoBehaviour
 
     // Components 
     public Behaviour halo;
-    private GameObject closestDoor;
-    private Vector3 doorPosition;
     private Renderer rend;
 
+    // Challenge canvas
+    private GameObject canvas;
 
-    public GameObject canvas;
-
-    // Player position
-    Transform player;
 
     // NavMesh
     NavMeshAgent nav;
-    private int navState; 
+    private bool followingPlayer;
+
+    Constants.NavState navState;
+
+    // Singleton
+    private static ai instance = null;
+    public static ai Instance
+    {
+        get
+        {
+            return instance;
+        }
+    }
 
 
     void Start()
     {
         //Set up references.
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        //player = GameObject.FindGameObjectWithTag("Player").transform;
         nav = this.GetComponent<NavMeshAgent>();
         rend = this.GetComponent<Renderer>();
-        navState = 1;
-
+        instance = this;
+        navState = Constants.NavState.toPlayer;
+        followingPlayer = true;
+        ChangeNavigationState(navState, Player.Instance.transform.position);
     }
 
-    void LateUpdate()
+    void Update()
     {
-        // Gets positions
-        closestDoor = FindClosestDoor();
-        if (closestDoor)
+        if (followingPlayer)
         {
-            doorPosition = closestDoor.transform.position;
-
-            float playerDoorDist = Vector3.Distance(player.position, doorPosition);
-
-            // When player far from door State 1
-            if (playerDoorDist > 15)
-            {
-                navState = 1;
-            }
-            // When player close to door
-            else
-            {
-                // If ai close to door State 3
-                if (Vector3.Distance(gameObject.transform.position, doorPosition) < 5f)
-                {
-                    navState = 3;
-                }
-                // If ai far from door State 2
-                else
-                {
-                    navState = 2;
-                }
-            }
+            nav.SetDestination(Player.Instance.transform.position);
         }
-        else
-        {
-            navState = 1;
-        }
-        ChangeNavigationState(navState);
-        // Y axis movement
+
         nav.baseOffset = averagePoint - Mathf.Cos(Time.time * verticalSpeed) * amplitude;
     }
 
    
-    // Find the closest game object with tag door
-    public GameObject FindClosestDoor()
-    {
-        GameObject[] gos;
-        gos = GameObject.FindGameObjectsWithTag("Door");
-        GameObject closest = null;
-        float distance = Mathf.Infinity;
-        foreach (GameObject go in gos)
-        {
-            Vector3 diff = go.transform.position - player.position;
-            float curDistance = diff.sqrMagnitude;
-            if (curDistance < distance)
-            {
-                closest = go;
-                distance = curDistance;
-            }
-        }
-
-        return closest;
-    }
-
     // Change ai navigation state
-    public void ChangeNavigationState(int stateIndex)
+    public void ChangeNavigationState(Constants.NavState newNavSate, Vector3 targetPos)
     {
-        switch (stateIndex)
+        switch (newNavSate)
         {
-            // Roaming
-            case 1:
+            // Following Player
+            case Constants.NavState.toPlayer:
                 halo.enabled = false;
-                nav.SetDestination(player.position);
+                followingPlayer = true;
                 rend.material.SetColor("_MainColor", Constants.BLUE);
                 break;
             // Going to door
-            case 2:
-                nav.SetDestination(doorPosition);
+            case Constants.NavState.toDoor:
+                followingPlayer = false;
                 break;
             // Interactable
-            case 3:
-                nav.SetDestination(this.transform.position);
+            case Constants.NavState.Interactable:
+                followingPlayer = false;
                 rend.material.SetColor("_MainColor", Constants.YELLOW);
                 halo.enabled = true;
                 break;
 
         }
+        nav.SetDestination(targetPos);
+        navState = newNavSate;
     }
-
-    void OnMouseDown()
+    public void SetCanvas(GameObject newCanvas)
     {
-        if (navState == 3)
+        canvas = newCanvas;
+    }
+    public void SetFollowingPlayer(bool newFollowPlayer)
+    {
+        followingPlayer = newFollowPlayer;
+    }
+    private void OnMouseDown()
+    {
+        if (navState == Constants.NavState.Interactable)
         {
             Debug.Log("canvas");
             canvas.SetActive(true);
         }
     }
-    public void DestroyDoor()
-    {
-        Destroy(closestDoor.transform.parent.gameObject);
-    }
+
 
 }

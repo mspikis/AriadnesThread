@@ -1,17 +1,20 @@
 ﻿<Properties StartupConfiguration="{36C06122-07CF-C5D9-7C81-0E5ECDD56826}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Challenge.cs">
     <Files>
       <File FileName="Assets/Scripts/Narration/Dialogue.cs" Line="11" Column="1" />
       <File FileName="Assets/Scripts/Narration/DialogueTrigger.cs" Line="7" Column="15" />
-      <File FileName="Assets/Scripts/Constants.cs" Line="7" Column="42" />
-      <File FileName="Assets/Scripts/ai.cs" Line="134" Column="30" />
+      <File FileName="Assets/Scripts/Constants.cs" Line="11" Column="11" />
       <File FileName="Temp/UnityTempFile-dfefa3cc04c3a4220bff8650a188cc4e" Line="5" Column="15" />
       <File FileName="Assets/Scripts/ForceFieldDoor.cs" Line="12" Column="5" />
       <File FileName="Temp/UnityTempFile-d03a2a890d6d44e86bbca817cac28b99" Line="5" Column="20" />
       <File FileName="Assets/Scripts/ChallengeCanvas.cs" Line="8" Column="6" />
       <File FileName="Assets/button2.cs" Line="3" Column="26" />
-      <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs" Line="20" Column="38" />
-      <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs" Line="8" Column="18" />
+      <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs" Line="84" Column="16" />
+      <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs" Line="262" Column="9" />
+      <File FileName="Assets/Scripts/ai.cs" Line="99" Column="5" />
+      <File FileName="Assets/Scripts/Interact.cs" Line="30" Column="6" />
+      <File FileName="Assets/Player.cs" Line="34" Column="74" />
+      <File FileName="Assets/Challenge.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

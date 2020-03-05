@@ -76,12 +76,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             if(Input.GetKeyUp(KeyCode.Escape))
             {
-                m_cursorIsLocked = false;
+                m_cursorIsLocked = !m_cursorIsLocked;
             }
-            else if(Input.GetMouseButtonUp(0))
+            /*else if(Input.GetMouseButtonUp(0))
             {
                 m_cursorIsLocked = true;
-            }
+            }*/
 
             if (m_cursorIsLocked)
             {
