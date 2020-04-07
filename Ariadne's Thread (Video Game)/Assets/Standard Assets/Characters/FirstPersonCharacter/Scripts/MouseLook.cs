@@ -55,9 +55,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
             UpdateCursorLock();
         }
 
-        public void SetCursorLock(bool value)
+        public void SetCursorLock()
         {
-            lockCursor = value;
+            lockCursor = !lockCursor;
             if(!lockCursor)
             {//we force unlock the cursor if the user disable the cursor locking helper
                 Cursor.lockState = CursorLockMode.None;
@@ -76,12 +76,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             if(Input.GetKeyUp(KeyCode.Escape))
             {
-                m_cursorIsLocked = !m_cursorIsLocked;
+                m_cursorIsLocked = false;
             }
-            /*else if(Input.GetMouseButtonUp(0))
+            else if(Input.GetMouseButtonUp(0))
             {
                 m_cursorIsLocked = true;
-            }*/
+            }
 
             if (m_cursorIsLocked)
             {

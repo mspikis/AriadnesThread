@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Door
   - DoorBoxCollider
+  - NarrationPart
   layers:
   - Default
   - TransparentFX
