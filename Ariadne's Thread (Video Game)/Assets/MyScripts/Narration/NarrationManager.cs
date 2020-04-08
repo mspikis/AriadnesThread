@@ -59,14 +59,17 @@ public class NarrationManager : MonoBehaviour
     IEnumerator TypeSentence (string sentence)
     {
         dialogueText.text = "";
+        ai.Instance.talking = true;
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return new WaitForSeconds(0.03f);
+            yield return new WaitForSeconds(0.05f);
         }
+        ai.Instance.talking = false;
+        StartCoroutine(ai.Instance.FWToNormal());
     }
     void EndDialogue()
     {
-        Debug.Log("End dialogue");
+        this.transform.GetChild(0).gameObject.SetActive(false);
     }
 }

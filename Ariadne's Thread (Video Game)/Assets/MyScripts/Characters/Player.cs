@@ -29,11 +29,18 @@ public class Player : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("NarrationPart"))
         {
-            if (ai.Instance.navState == Constants.NavState.idle)
+            
+            if (collision.gameObject.name == "Trigger 1")
             {
                 ai.Instance.ChangeNavigationState(Constants.NavState.toPlayer, Player.Instance.transform.position);
+                StartCoroutine(StartNarration(collision, 3.0f));
             }
-            collision.gameObject.GetComponent<NarrationTrigger>().TriggerDialogue();
+            else
+            {
+                StartCoroutine(StartNarration(collision, 0f));
+            }
+
+
 
         }
     }
@@ -42,8 +49,16 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("DoorBoxCollider"))
         {
             ai.Instance.ChangeNavigationState(Constants.NavState.toPlayer, this.transform.position);
-            Debug.Log("outcollider");
 
         }
+    }
+
+    private IEnumerator StartNarration(Collider col, float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+        NarrationManager.Instance.transform.GetChild(0).gameObject.SetActive(true);
+        col.gameObject.GetComponent<NarrationTrigger>().TriggerDialogue();
+        Destroy(col.gameObject);
+        StopAllCoroutines();
     }
 }

@@ -1,22 +1,21 @@
 ﻿<Properties StartupConfiguration="{36C06122-07CF-C5D9-7C81-0E5ECDD56826}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyScripts/Narration/NarrationManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Shaders/ShieldFX.shader">
     <Files>
       <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs" Line="57" Column="1" />
       <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs" />
       <File FileName="Assets/Standard Assets/Utility/DragRigidbody.cs" />
       <File FileName="Assets/Standard Assets/Cameras/Scripts/FreeLookCam.cs" />
-      <File FileName="Assets/MyScripts/Characters/ai.cs" Line="35" Column="6" />
-      <File FileName="Assets/MyScripts/Utils/Constants.cs" Line="15" Column="2" />
-      <File FileName="Assets/MyScripts/Characters/Player.cs" Line="36" Column="85" />
-      <File FileName="Assets/NarrationManager.cs" Line="65" Column="49" />
-      <File FileName="Assets/MyScripts/Narration/NarrationPart1.cs" Line="8" Column="1" />
-      <File FileName="Assets/NarrationTrigger.cs" Line="14" Column="1" />
-      <File FileName="Assets/TyppingEffect.cs" Line="11" Column="1" />
+      <File FileName="Assets/MyScripts/Characters/ai.cs" Line="62" Column="36" />
+      <File FileName="Assets/MyScripts/Utils/Constants.cs" />
+      <File FileName="Assets/MyScripts/Characters/Player.cs" Line="59" Column="55" />
+      <File FileName="Assets/MyScripts/Narration/NarrationManager.cs" Line="70" Column="34" />
+      <File FileName="Assets/MyScripts/Narration/NarrationTrigger.cs" Line="1" Column="1" />
+      <File FileName="Assets/Shaders/ShieldFX.shader" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="02b8b352-d542-4673-8fb4-a1b756e38a09" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="da04cce9-afd8-42a6-9bb4-d1d94981265a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

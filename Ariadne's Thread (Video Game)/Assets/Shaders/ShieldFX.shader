@@ -5,7 +5,7 @@ Shader "Unlit/ShieldFX"
 		_MainColor("MainColor", Color) = (1,1,1,1)
 		_MainTex ("Texture", 2D) = "white" {}
 		_Fresnel("Fresnel Intensity", Range(0,200)) = 3.0
-		_FresnelWidth("Fresnel Width", Range(0,2)) = 3.0
+		_FresnelWidth("Fresnel Width", Range(0,4)) = 3.0
 		_Distort("Distort", Range(0, 100)) = 1.0
 		_IntersectionThreshold("Highlight of intersection threshold", range(0,1)) = .1 //Max difference for intersections
 		_ScrollSpeedU("Scroll U Speed",float) = 2

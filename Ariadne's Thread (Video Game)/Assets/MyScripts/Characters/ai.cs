@@ -20,7 +20,15 @@ public class ai : MonoBehaviour
 
     // NavMesh
     NavMeshAgent nav;
-    private bool followingPlayer = false;
+    private bool followingPlayer;
+
+    // AI Talking
+    public bool talking = false;
+    private bool increasingFW = true;
+    public float FWincreament = 0.04f;
+    public float FWDefault = 1.0f;
+    
+
 
     public Constants.NavState navState;
 
@@ -40,9 +48,11 @@ public class ai : MonoBehaviour
 
     void Start()
     {
+        
         //Set up references.
         nav = this.GetComponent<NavMeshAgent>();
         rend = this.GetComponent<Renderer>();
+        rend.material.SetFloat("_FresnelWidth", FWDefault);
         navState = Constants.NavState.idle;
         ChangeNavigationState(navState, this.transform.position);
     }
@@ -52,6 +62,26 @@ public class ai : MonoBehaviour
         if (followingPlayer)
         {
             nav.SetDestination(Player.Instance.transform.position);
+        }
+        if (talking)
+        {
+            Debug.Log("talking");
+                if (rend.material.GetFloat("_FresnelWidth") > FWDefault + Random.Range(0.9f, 1.7f))
+                {
+                    increasingFW = false;
+                }
+                else if (rend.material.GetFloat("_FresnelWidth") < FWDefault + FWincreament )
+                {
+                    increasingFW = true;
+                }
+                if (increasingFW)
+                {
+                    rend.material.SetFloat("_FresnelWidth", rend.material.GetFloat("_FresnelWidth") + FWincreament);
+                }
+                else
+                {
+                    rend.material.SetFloat("_FresnelWidth", rend.material.GetFloat("_FresnelWidth") - FWincreament);
+                }
         }
 
         nav.baseOffset = averagePoint - Mathf.Cos(Time.time * verticalSpeed) * amplitude;
@@ -103,6 +133,15 @@ public class ai : MonoBehaviour
             Debug.Log("canvas");
             canvas.SetActive(true);
         }
+    }
+    public IEnumerator FWToNormal()
+    {
+        while (rend.material.GetFloat("_FresnelWidth") > 0.94f)
+        {
+                rend.material.SetFloat("_FresnelWidth", rend.material.GetFloat("_FresnelWidth") - FWincreament);
+            yield return 0;
+        }
+        StopAllCoroutines();
     }
 
 
