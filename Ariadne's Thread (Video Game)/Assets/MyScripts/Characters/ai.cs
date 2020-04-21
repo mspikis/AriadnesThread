@@ -11,7 +11,6 @@ public class ai : MonoBehaviour
     public float amplitude = 0.2f;
 
     // Components 
-    public Behaviour halo;
     private Renderer rend;
 
     // Challenge canvas
@@ -25,7 +24,7 @@ public class ai : MonoBehaviour
     // AI Talking
     public bool talking = false;
     private bool increasingFW = true;
-    public float FWincreament = 0.04f;
+    public float FWincreament = 0.03f;
     public float FWDefault = 1.0f;
     
 
@@ -65,7 +64,6 @@ public class ai : MonoBehaviour
         }
         if (talking)
         {
-            Debug.Log("talking");
                 if (rend.material.GetFloat("_FresnelWidth") > FWDefault + Random.Range(0.9f, 1.7f))
                 {
                     increasingFW = false;
@@ -85,6 +83,7 @@ public class ai : MonoBehaviour
         }
 
         nav.baseOffset = averagePoint - Mathf.Cos(Time.time * verticalSpeed) * amplitude;
+        InteractWithAI();
     }
 
    
@@ -99,7 +98,6 @@ public class ai : MonoBehaviour
                 break;
             // Following Player
             case Constants.NavState.toPlayer:
-                halo.enabled = false;
                 followingPlayer = true;
                 rend.material.SetColor("_MainColor", Constants.BLUE);
                 break;
@@ -111,7 +109,7 @@ public class ai : MonoBehaviour
             case Constants.NavState.Interactable:
                 followingPlayer = false;
                 rend.material.SetColor("_MainColor", Constants.YELLOW);
-                halo.enabled = true;
+                this.gameObject.transform.GetChild(0).gameObject.SetActive(true);
                 break;
 
         }
@@ -126,12 +124,16 @@ public class ai : MonoBehaviour
     {
         followingPlayer = newFollowPlayer;
     }
-    private void OnMouseDown()
+    private void InteractWithAI()
     {
-        if (navState == Constants.NavState.Interactable)
+        if (Input.GetKeyUp(KeyCode.F))
         {
-            Debug.Log("canvas");
-            canvas.SetActive(true);
+            if (navState == Constants.NavState.Interactable)
+            {
+                Debug.Log("canvas");
+                canvas.SetActive(true);
+                this.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+            }
         }
     }
     public IEnumerator FWToNormal()

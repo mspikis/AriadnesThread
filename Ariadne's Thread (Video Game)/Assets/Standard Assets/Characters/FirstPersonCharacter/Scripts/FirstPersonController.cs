@@ -11,7 +11,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
     public class FirstPersonController : MonoBehaviour
     {
         [SerializeField] private bool m_IsWalking;
-        [SerializeField] private float m_WalkSpeed;
+        [SerializeField] private float m_WalkSpeed = 5.0f;
         [SerializeField] private float m_RunSpeed;
         [SerializeField] [Range(0f, 1f)] private float m_RunstepLenghten;
         [SerializeField] private float m_JumpSpeed;
@@ -41,6 +41,20 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private float m_NextStep;
         private bool m_Jumping;
         private AudioSource m_AudioSource;
+
+        private static FirstPersonController instance = null;
+        public static FirstPersonController Instance
+        {
+            get
+            {
+                return instance;
+            }
+        }
+
+        private void Awake()
+        {
+            instance = this;
+        }
 
         // Use this for initialization
         private void Start()

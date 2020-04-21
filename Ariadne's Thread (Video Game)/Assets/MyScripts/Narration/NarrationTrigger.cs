@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class NarrationTrigger : MonoBehaviour
 {
-    public NarrationDialogue dialogue;
+    public NarrationPart narrationPart;
 
     public void TriggerDialogue ()
     {
-        NarrationManager.Instance.StartDialogue(dialogue);
+       NarrationManager.Instance.StartDialogues(narrationPart);
     }
 }
