@@ -1,9 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    public FirstPersonController characterController;
+    public bool storyMode;
+
     private static Player instance = null;
 
     public static Player Instance
@@ -15,14 +20,21 @@ public class Player : MonoBehaviour
     }
     private void Awake()
     {
+
         instance = this;
+        characterController = GetComponent<FirstPersonController>();
+        storyMode = false;
+    }
+    private void Update()
+    {
+        InteractWithAI();
     }
 
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("DoorBoxCollider"))
         {
-            ai.Instance.ChangeNavigationState(Constants.NavState.toDoor, collision.transform.parent.transform.position);
+            AIController.Instance.ChangeNavigationState(Constants.NavState.toDoor, collision.transform.parent.transform.position);
             Debug.Log("incollider");
 
 
@@ -30,9 +42,9 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("NarrationPart"))
         {
             
-            if (collision.gameObject.name == "Trigger 1")
+            if (collision.gameObject.name == "StorylineTrigger1")
             {
-                ai.Instance.ChangeNavigationState(Constants.NavState.toPlayer, Player.Instance.transform.position);
+                AIController.Instance.ChangeNavigationState(Constants.NavState.toPlayer, Player.Instance.transform.position);
                 StartCoroutine(StartNarration(collision, 3.0f));
             }
             else
@@ -48,17 +60,65 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("DoorBoxCollider"))
         {
-            ai.Instance.ChangeNavigationState(Constants.NavState.toPlayer, this.transform.position);
+            AIController.Instance.ChangeNavigationState(Constants.NavState.toPlayer, Player.Instance.transform.position);
 
         }
     }
 
-    private IEnumerator StartNarration(Collider col, float delayTime)
+        private void InteractWithAI()
     {
-        yield return new WaitForSeconds(delayTime);
-        NarrationManager.Instance.transform.GetChild(0).gameObject.SetActive(true);
-        col.gameObject.GetComponent<NarrationTrigger>().TriggerDialogue();
-        Destroy(col.gameObject);
-        StopAllCoroutines();
+        if (Input.GetKeyUp(KeyCode.F))
+        {
+            if (AIController.Instance.navState == Constants.NavState.Interactable && Player.Instance.storyMode == false)
+            {
+
+               
+                StartChallenge(Interact.Instance.currentDoor);
+
+            }
+        }
     }
+
+    private IEnumerator StartNarration(Collider currentStoryPart, float delayTime)
+    {
+        DisableMovement();
+        yield return new WaitForSeconds(delayTime);
+        NarrationManager.Instance.transform.Find("NarrationCanvas").gameObject.transform.Find("StorylinePanel").gameObject.SetActive(true);
+
+        currentStoryPart.gameObject.GetComponent<StorylineTrigger>().TriggerDialogue();
+        
+        Destroy(currentStoryPart.gameObject);
+        StopAllCoroutines();
+        
+    }
+    private void StartChallenge(Collider currentChallenge)
+    {
+        NarrationManager.Instance.transform.Find("NarrationCanvas").gameObject.transform.Find("ChallengePanel").gameObject.SetActive(true);
+        currentChallenge.gameObject.GetComponent<ChallengeTrigger>().TriggerDialogue();
+        DisableMovement();
+    }
+
+
+    public void DisableMovement()
+    {
+        characterController.enabled = false;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        storyMode = true;
+    }
+
+    public void EnableMovement()
+    {
+        characterController.enabled = true;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        storyMode = false;
+        
+    }
+    public void DestroyCurrentDoor()
+    {
+        Destroy(Interact.Instance.currentDoor.gameObject);
+        AIController.Instance.ChangeNavigationState(Constants.NavState.toPlayer, Player.Instance.transform.position);
+    }
+
 }

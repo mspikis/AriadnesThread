@@ -1,20 +1,20 @@
 ﻿<Properties StartupConfiguration="{36C06122-07CF-C5D9-7C81-0E5ECDD56826}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/Vehicles/Car/Scripts/CarController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyScripts/Narration/NarrationManager.cs">
     <Files>
-      <File FileName="Assets/MyScripts/Characters/Player.cs" Line="7" Column="43" IsPinned="True" />
-      <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs" Line="77" Column="47" />
-      <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs" Line="223" Column="9" />
-      <File FileName="Assets/MyScripts/Characters/ai.cs" Line="89" Column="4" />
-      <File FileName="Assets/MyScripts/Utils/Constants.cs" />
-      <File FileName="Assets/MyScripts/Narration/NarrationManager.cs" />
-      <File FileName="Assets/MyScripts/Narration/NarrationTrigger.cs" />
-      <File FileName="Assets/MyScripts/Narration/NarrationDialogue.cs" />
-      <File FileName="Assets/Standard Assets/Vehicles/Car/Scripts/CarController.cs" Line="26" Column="1" />
+      <File FileName="Assets/MyScripts/Characters/Player.cs" Line="114" Column="118" />
+      <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs" Line="70" Column="40" />
+      <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs" Line="98" Column="13" />
+      <File FileName="Assets/MyScripts/Characters/ai.cs" Line="45" Column="6" />
+      <File FileName="Assets/MyScripts/Utils/Constants.cs" Line="10" Column="60" />
+      <File FileName="Assets/MyScripts/Narration/NarrationTrigger.cs" Line="5" Column="23" />
+      <File FileName="Assets/ChallengeTrigger.cs" Line="19" Column="5" />
+      <File FileName="Assets/MyScripts/Narration/NarrationManager.cs" Line="120" Column="6" />
+      <File FileName="Assets/MyScripts/Characters/Interact.cs" Line="31" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="da8e0c63-788b-4611-82e1-e2879ba8a9d4" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="33a75eb2-d623-4a69-b391-267913a98dac" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

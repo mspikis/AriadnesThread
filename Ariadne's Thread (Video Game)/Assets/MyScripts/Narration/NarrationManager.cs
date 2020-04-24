@@ -2,12 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class NarrationManager : MonoBehaviour
 {
-    public Text dialogueText;
-    public Button[] buttons;
+    public GameObject storylinePanel;
+    public Text storylineText;
+    public Button[] storylineButtons;
+
+    public GameObject challengePanel;
+    public Text challengeText;
+    public Button[] challengeButtons;
+
+    private GameObject panelActive;
+    private Text textActive;
+    private Button[] buttonsActive;
+
+    public float charSpeed = 0.05f;
+ 
+
 
     private Queue<NarrationDialogue> dialogues;
     // Singleton
@@ -23,13 +35,14 @@ public class NarrationManager : MonoBehaviour
     {
         instance = this;
     }
+
     // Start is called before the first frame update
     void Start()
     {
         dialogues = new Queue<NarrationDialogue>();
     }
 
-    public void StartDialogues (NarrationPart narrationPart)
+    public void StartDialogues (NarrationPart narrationPart, bool isStoryline)
     {
         dialogues.Clear();
 
@@ -38,12 +51,16 @@ public class NarrationManager : MonoBehaviour
             dialogues.Enqueue(dialogue);
         }
 
-        DisplayNextDialogue();  
+        AssignActivePanelProperties(isStoryline);
+        DisplayNextDialogue();
     }
 
     public void DisplayNextDialogue ()
     {
-        foreach (Button button in buttons)
+        
+        
+
+        foreach (Button button in buttonsActive)
         {
             button.gameObject.SetActive(false);
         }
@@ -55,7 +72,7 @@ public class NarrationManager : MonoBehaviour
         NarrationDialogue dialogue = dialogues.Dequeue();
         StopAllCoroutines();
         StartCoroutine(GenerateDialogue(dialogue));
-        CreateButtons(dialogue);
+        
 
 
     }
@@ -63,16 +80,16 @@ public class NarrationManager : MonoBehaviour
     IEnumerator GenerateDialogue (NarrationDialogue dialogue)
     {
         string sentence = dialogue.sentence;
-
-        dialogueText.text = "";
-        ai.Instance.talking = true;
+        textActive.text = "";
+        AIController.Instance.talking = true;
         foreach (char letter in sentence.ToCharArray())
         {
-            dialogueText.text += letter;
-            yield return new WaitForSeconds(0.05f);
+            textActive.text += letter;
+            yield return new WaitForSeconds(charSpeed);
         }
-        ai.Instance.talking = false;
-        StartCoroutine(ai.Instance.FWToNormal());
+        AIController.Instance.talking = false;
+        StartCoroutine(AIController.Instance.FWToNormal());
+        CreateButtons(dialogue);
     }
 
     void CreateButtons(NarrationDialogue dialogue)
@@ -84,23 +101,41 @@ public class NarrationManager : MonoBehaviour
             {
                 if (i < 3)
                 {
-                    buttons[i].gameObject.SetActive(true);
-                    buttons[i].gameObject.transform.GetChild(0).GetComponent<Text>().text = answer;
+                   buttonsActive[i].gameObject.SetActive(true);
+                   buttonsActive[i].gameObject.transform.GetChild(0).GetComponent<Text>().text = answer;
                 }
                 i++;
             }
         }
         else
         {
-            buttons[0].gameObject.SetActive(true);
-            buttons[0].gameObject.transform.GetChild(0).GetComponent<Text>().text = "Continue";
+           buttonsActive[0].gameObject.SetActive(true);
+           buttonsActive[0].gameObject.transform.GetChild(0).GetComponent<Text>().text = "Continue";
         }
 
     }
 
     void EndDialogue()
     {
-        this.transform.GetChild(0).gameObject.SetActive(false);
+        panelActive.gameObject.SetActive(false);
+        Player.Instance.EnableMovement();
     }
 
+
+
+    private void AssignActivePanelProperties(bool isStoryline)
+    {
+        if (isStoryline)
+        {
+            buttonsActive = storylineButtons;
+            textActive = storylineText;
+            panelActive = storylinePanel;
+        }
+        else
+        {
+            buttonsActive = challengeButtons;
+            textActive = challengeText;
+            panelActive = challengePanel;
+        }
+    }
 }

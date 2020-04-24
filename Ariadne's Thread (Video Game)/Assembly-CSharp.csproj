@@ -63,18 +63,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\MyScripts\Characters\ai.cs" />
+    <Compile Include="Assets\MyScripts\Characters\AIController.cs" />
     <Compile Include="Assets\MyScripts\Characters\Interact.cs" />
     <Compile Include="Assets\MyScripts\Characters\Player.cs" />
-    <Compile Include="Assets\MyScripts\Narration\Challenge.cs" />
+    <Compile Include="Assets\MyScripts\Narration\ChallengeTrigger.cs" />
     <Compile Include="Assets\MyScripts\Narration\NarrationDialogue.cs" />
     <Compile Include="Assets\MyScripts\Narration\NarrationManager.cs" />
     <Compile Include="Assets\MyScripts\Narration\NarrationPart.cs" />
-    <Compile Include="Assets\MyScripts\Narration\NarrationTrigger.cs" />
-    <Compile Include="Assets\MyScripts\Objects\ForceFieldDoor.cs" />
+    <Compile Include="Assets\MyScripts\Narration\StorylineTrigger.cs" />
     <Compile Include="Assets\MyScripts\Utils\Constants.cs" />
-    <Compile Include="Assets\MyScripts\Utils\SceneController.cs" />
-    <Compile Include="Assets\NarrationButtons.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
