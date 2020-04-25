@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ChallengeButtonController.cs" />
     <Compile Include="Assets\MyScripts\Characters\AIController.cs" />
     <Compile Include="Assets\MyScripts\Characters\Interact.cs" />
     <Compile Include="Assets\MyScripts\Characters\Player.cs" />

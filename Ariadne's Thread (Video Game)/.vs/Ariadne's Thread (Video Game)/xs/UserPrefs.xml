@@ -1,15 +1,16 @@
 ﻿<Properties StartupConfiguration="{36C06122-07CF-C5D9-7C81-0E5ECDD56826}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyScripts/Narration/NarrationManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ChallengeButtonController.cs">
     <Files>
-      <File FileName="Assets/MyScripts/Characters/Player.cs" Line="114" Column="118" />
+      <File FileName="Assets/MyScripts/Characters/Player.cs" Line="66" Column="6" />
       <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs" Line="70" Column="40" />
       <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs" Line="98" Column="13" />
       <File FileName="Assets/MyScripts/Characters/ai.cs" Line="45" Column="6" />
       <File FileName="Assets/MyScripts/Utils/Constants.cs" Line="10" Column="60" />
       <File FileName="Assets/MyScripts/Narration/NarrationTrigger.cs" Line="5" Column="23" />
       <File FileName="Assets/ChallengeTrigger.cs" Line="19" Column="5" />
-      <File FileName="Assets/MyScripts/Narration/NarrationManager.cs" Line="120" Column="6" />
+      <File FileName="Assets/MyScripts/Narration/NarrationManager.cs" Line="123" Column="1" />
       <File FileName="Assets/MyScripts/Characters/Interact.cs" Line="31" Column="6" />
+      <File FileName="Assets/ChallengeButtonController.cs" Line="7" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

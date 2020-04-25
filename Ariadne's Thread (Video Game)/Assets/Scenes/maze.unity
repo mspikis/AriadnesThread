@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 125104779}
   - component: {fileID: 125104778}
   - component: {fileID: 125104777}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: ChallengeButton3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -935,7 +935,7 @@ GameObject:
   - component: {fileID: 380525367}
   - component: {fileID: 380525369}
   - component: {fileID: 380525368}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: StorylineTrigger3
   m_TagString: NarrationPart
   m_Icon: {fileID: 0}
@@ -1035,7 +1035,7 @@ GameObject:
   - component: {fileID: 496757063}
   - component: {fileID: 496757065}
   - component: {fileID: 496757064}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1116,7 +1116,8 @@ GameObject:
   - component: {fileID: 527079081}
   - component: {fileID: 527079080}
   - component: {fileID: 527079079}
-  m_Layer: 8
+  - component: {fileID: 527079083}
+  m_Layer: 5
   m_Name: ChallengeButtons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1225,6 +1226,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 527079077}
   m_CullTransparentMesh: 0
+--- !u!114 &527079083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527079077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 031421364ffd5440b9028956a8fd17a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &549755800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,7 +1349,7 @@ GameObject:
   - component: {fileID: 563307424}
   - component: {fileID: 563307426}
   - component: {fileID: 563307425}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1416,7 +1429,7 @@ GameObject:
   - component: {fileID: 586077520}
   - component: {fileID: 586077519}
   - component: {fileID: 586077518}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: ChallengePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1568,36 +1581,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &702473929
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 702473930}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &702473930
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702473929}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.1697273, y: -3.3710163, z: -8.750105}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &727745494
 GameObject:
   m_ObjectHideFlags: 0
@@ -1679,7 +1662,7 @@ GameObject:
   - component: {fileID: 742925018}
   - component: {fileID: 742925017}
   - component: {fileID: 742925016}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: ChallengeButton2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1959,7 +1942,7 @@ GameObject:
   - component: {fileID: 986143968}
   - component: {fileID: 986143969}
   - component: {fileID: 986143970}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: ChallengeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2127,7 +2110,7 @@ GameObject:
   - component: {fileID: 1111204699}
   - component: {fileID: 1111204701}
   - component: {fileID: 1111204700}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: StorylineTrigger2
   m_TagString: NarrationPart
   m_Icon: {fileID: 0}
@@ -2188,7 +2171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1232604411}
   - component: {fileID: 1232604412}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Narration
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2236,6 +2219,7 @@ MonoBehaviour:
   - {fileID: 2049380849}
   - {fileID: 742925016}
   - {fileID: 125104777}
+  charSpeed: 0.05
 --- !u!1 &1236538579
 GameObject:
   m_ObjectHideFlags: 0
@@ -2305,7 +2289,7 @@ GameObject:
   - component: {fileID: 1243632244}
   - component: {fileID: 1243632246}
   - component: {fileID: 1243632245}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2438,7 +2422,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_WalkSpeed
-      value: 20
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_Enabled
@@ -2737,7 +2721,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1431619218}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: StorylineTriggers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3282,7 +3266,7 @@ MonoBehaviour:
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
+  m_ForceModuleActive: 1
 --- !u!114 &1821168867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3310,7 +3294,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1883336985
 GameObject:
@@ -3488,7 +3472,7 @@ GameObject:
   - component: {fileID: 2049380851}
   - component: {fileID: 2049380850}
   - component: {fileID: 2049380849}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: ChallengeButton1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3724,6 +3708,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChallengeDoor1
       objectReference: {fileID: 0}
+    - target: {fileID: 826095766724998192, guid: a4fc654acad9c459f885a37bcddf6a23,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 826095766724998196, guid: a4fc654acad9c459f885a37bcddf6a23,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3784,6 +3773,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 826095766403924815, guid: a4fc654acad9c459f885a37bcddf6a23,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 826095766403924814, guid: a4fc654acad9c459f885a37bcddf6a23,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -3799,6 +3793,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.231
       objectReference: {fileID: 0}
+    - target: {fileID: 826095766922021495, guid: a4fc654acad9c459f885a37bcddf6a23,
+        type: 3}
+      propertyPath: challengePart.dialogues.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 826095766922021495, guid: a4fc654acad9c459f885a37bcddf6a23,
+        type: 3}
+      propertyPath: challengePart.dialogues.Array.data[0].sentence
+      value: gsdfsfds
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4fc654acad9c459f885a37bcddf6a23, type: 3}
 --- !u!1001 &2944718948452955376
@@ -3812,6 +3816,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StorylineTrigger1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412076, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
         type: 3}
@@ -3871,12 +3880,27 @@ PrefabInstance:
     - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
         type: 3}
       propertyPath: storylinePart.dialogues.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
         type: 3}
       propertyPath: storylinePart.dialogues.Array.data[1].answers.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[2].answers.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[3].answers.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[4].answers.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
         type: 3}
@@ -3913,6 +3937,61 @@ PrefabInstance:
       value: 'Why do you think you are here?
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[2].answers.Array.data[0]
+      value: No reason in particular.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[2].answers.Array.data[1]
+      value: Why are you here?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[2].answers.Array.data[2]
+      value: I will figure that out for myself.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[3].sentence
+      value: That's reasonable thing to say. So, what are you gonna do now?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[3].answers.Array.data[0]
+      value: I will follow the path.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[3].answers.Array.data[1]
+      value: I will try and figure out the maze.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[3].answers.Array.data[2]
+      value: I am gonna rest here for a while.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[4].sentence
+      value: This is a meaningful decision.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[4].answers.Array.data[0]
+      value: No reason in particular.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[4].answers.Array.data[1]
+      value: Why are you here?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[4].answers.Array.data[2]
+      value: I will figure that out for myself.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 456cac35c737844f18a66cb6b25b27c5, type: 3}
