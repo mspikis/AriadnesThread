@@ -63,15 +63,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ChallengeButtonController.cs" />
+    <Compile Include="Assets\ChallengeManager.cs" />
+    <Compile Include="Assets\MyScripts\ChallengeButtonController.cs" />
     <Compile Include="Assets\MyScripts\Characters\AIController.cs" />
     <Compile Include="Assets\MyScripts\Characters\Interact.cs" />
     <Compile Include="Assets\MyScripts\Characters\Player.cs" />
+    <Compile Include="Assets\MyScripts\MyButton.cs" />
     <Compile Include="Assets\MyScripts\Narration\ChallengeTrigger.cs" />
     <Compile Include="Assets\MyScripts\Narration\NarrationDialogue.cs" />
     <Compile Include="Assets\MyScripts\Narration\NarrationManager.cs" />
     <Compile Include="Assets\MyScripts\Narration\NarrationPart.cs" />
     <Compile Include="Assets\MyScripts\Narration\StorylineTrigger.cs" />
+    <Compile Include="Assets\MyScripts\StorylineManager.cs" />
     <Compile Include="Assets\MyScripts\Utils\Constants.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
@@ -90,7 +93,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\ProjectSettings\ProjectVersion.txt" />
-    <None Include="Assets\Prefabs\SkyboxPrefabs\Hdri setup.txt" />
+    <None Include="Assets\MyPrefabs\SkyboxPrefabs\Hdri setup.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />

@@ -1,21 +1,22 @@
 ﻿<Properties StartupConfiguration="{36C06122-07CF-C5D9-7C81-0E5ECDD56826}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ChallengeButtonController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyScripts/Characters/Player.cs">
     <Files>
-      <File FileName="Assets/MyScripts/Characters/Player.cs" Line="66" Column="6" />
-      <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs" Line="70" Column="40" />
-      <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs" Line="98" Column="13" />
-      <File FileName="Assets/MyScripts/Characters/ai.cs" Line="45" Column="6" />
-      <File FileName="Assets/MyScripts/Utils/Constants.cs" Line="10" Column="60" />
-      <File FileName="Assets/MyScripts/Narration/NarrationTrigger.cs" Line="5" Column="23" />
-      <File FileName="Assets/ChallengeTrigger.cs" Line="19" Column="5" />
-      <File FileName="Assets/MyScripts/Narration/NarrationManager.cs" Line="123" Column="1" />
-      <File FileName="Assets/MyScripts/Characters/Interact.cs" Line="31" Column="6" />
+      <File FileName="Assets/MyScripts/Characters/Interact.cs" />
       <File FileName="Assets/ChallengeButtonController.cs" Line="7" Column="5" />
+      <File FileName="Assets/MyScripts/StorylineManager.cs" Line="23" Column="9" />
+      <File FileName="Assets/MyScripts/Narration/StorylineTrigger.cs" Line="13" Column="2" />
+      <File FileName="Assets/MyScripts/Narration/ChallengeTrigger.cs" Line="7" Column="40" />
+      <File FileName="Assets/MyScripts/Narration/NarrationDialogue.cs" Line="5" Column="1" />
+      <File FileName="Assets/MyScripts/MyButton.cs" Line="6" Column="1" />
+      <File FileName="Assets/MyScripts/Narration/NarrationPart.cs" Line="6" Column="1" />
+      <File FileName="Assets/ChallengeManager.cs" Line="28" Column="5" />
+      <File FileName="Assets/MyScripts/Narration/NarrationManager.cs" Line="117" Column="30" />
+      <File FileName="Assets/MyScripts/Characters/Player.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="33a75eb2-d623-4a69-b391-267913a98dac" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="073b9bc9-d85c-4633-a0d3-0c2e7d07b821" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
 {
     public FirstPersonController characterController;
     public bool storyMode;
+    public GameObject storylinePanel;
+    public GameObject challengePanel;
 
     private static Player instance = null;
 
@@ -45,11 +47,11 @@ public class Player : MonoBehaviour
             if (collision.gameObject.name == "StorylineTrigger1")
             {
                 AIController.Instance.ChangeNavigationState(Constants.NavState.toPlayer, Player.Instance.transform.position);
-                StartCoroutine(StartNarration(collision, 3.0f));
+                StartCoroutine(StartStorylinePart(collision, 3.0f));
             }
             else
             {
-                StartCoroutine(StartNarration(collision, 0f));
+                StartCoroutine(StartStorylinePart(collision, 0f));
             }
 
 
@@ -78,12 +80,12 @@ public class Player : MonoBehaviour
             }
         }
     }
-
-    private IEnumerator StartNarration(Collider currentStoryPart, float delayTime)
+    
+    private IEnumerator StartStorylinePart(Collider currentStoryPart, float delayTime)
     {
         DisableMovement();
         yield return new WaitForSeconds(delayTime);
-        NarrationManager.Instance.transform.Find("NarrationCanvas").gameObject.transform.Find("StorylinePanel").gameObject.SetActive(true);
+        storylinePanel.gameObject.SetActive(true);
 
         currentStoryPart.gameObject.GetComponent<StorylineTrigger>().TriggerDialogue();
         
@@ -91,9 +93,10 @@ public class Player : MonoBehaviour
         StopAllCoroutines();
         
     }
+ 
     private void StartChallenge(Collider currentChallenge)
     {
-        NarrationManager.Instance.transform.Find("NarrationCanvas").gameObject.transform.Find("ChallengePanel").gameObject.SetActive(true);
+        challengePanel.gameObject.SetActive(true);
         currentChallenge.gameObject.GetComponent<ChallengeTrigger>().TriggerDialogue();
         DisableMovement();
     }

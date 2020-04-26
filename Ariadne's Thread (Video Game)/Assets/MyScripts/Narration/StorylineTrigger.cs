@@ -8,6 +8,6 @@ public class StorylineTrigger : MonoBehaviour
 
     public void TriggerDialogue ()
     {
-       NarrationManager.Instance.StartDialogues(storylinePart, true);
+       StorylineManager.Instance.StartDialogues(storylinePart);
     }
 }

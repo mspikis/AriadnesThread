@@ -14,7 +14,7 @@ public class ChallengeTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        NarrationManager.Instance.StartDialogues(challengePart, false);
+        ChallengeManager.Instance.StartDialogues(challengePart);
     }
     
 

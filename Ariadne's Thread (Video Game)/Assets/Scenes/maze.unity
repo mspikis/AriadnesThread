@@ -486,18 +486,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 125104778}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1232604412}
-        m_MethodName: DisplayNextDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &125104778
@@ -737,18 +726,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 242522372}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1232604412}
-        m_MethodName: DisplayNextDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &242522372
@@ -924,78 +902,24 @@ NavMeshAgent:
   m_BaseOffset: 2
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!1 &380525366
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 380525367}
-  - component: {fileID: 380525369}
-  - component: {fileID: 380525368}
-  m_Layer: 5
-  m_Name: StorylineTrigger3
-  m_TagString: NarrationPart
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &380525367
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 380525366}
-  m_LocalRotation: {x: -0, y: 0.53651977, z: -0, w: 0.8438878}
-  m_LocalPosition: {x: 0.45, y: 0.61, z: -10.1}
-  m_LocalScale: {x: 1.0830358, y: 1.4321, z: 0.15876906}
-  m_Children: []
-  m_Father: {fileID: 1431619218}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 64.894005, z: 0}
---- !u!114 &380525368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 380525366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc063a9b03c4248e8b51fb01832b24a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  storylinePart:
-    dialogues:
-    - sentence: "There was this man, a philosopher by the name of Socrates that had
-        this saying :\u201CI cannot teach anybody anything. I can only make them think\u201D.
-        Sufficient to say, he was not very popular."
-      answers: []
-    - sentence: This is your first challenge here. Answer correctly and you might
-        become a little bit wiser.
-      answers: []
---- !u!65 &380525369
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 380525366}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &401659190 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0,
     type: 3}
   m_PrefabInstance: {fileID: 1255101898}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &401659193 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1255101898}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401659190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05ec5cf00ca181d45a42ba1870e148c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &401659196
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1022,8 +946,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b27ce84ae9aba47d4bea651bf3bc0843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterController: {fileID: 0}
+  characterController: {fileID: 401659193}
   storyMode: 0
+  storylinePanel: {fileID: 1436166590}
+  challengePanel: {fileID: 586077516}
+--- !u!1 &465745898
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 465745899}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &465745899
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465745898}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.000086, y: 36.455734, z: -5.9030533}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &496757062
 GameObject:
   m_ObjectHideFlags: 0
@@ -1429,6 +1385,7 @@ GameObject:
   - component: {fileID: 586077520}
   - component: {fileID: 586077519}
   - component: {fileID: 586077518}
+  - component: {fileID: 586077521}
   m_Layer: 5
   m_Name: ChallengePanel
   m_TagString: Untagged
@@ -1517,6 +1474,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 586077516}
   m_CullTransparentMesh: 0
+--- !u!114 &586077521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586077516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e03369fd7ea04689a17c6646c4d4163, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textActive: {fileID: 986143969}
+  buttonsActive:
+  - {fileID: 2049380849}
+  - {fileID: 742925016}
+  - {fileID: 125104777}
+  incorrectAnswer:
+    sentence: This is not the correct answer. Try again!
+    myButtons: []
 --- !u!1 &594200102
 GameObject:
   m_ObjectHideFlags: 0
@@ -1728,29 +1705,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 742925017}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1232604412}
-        m_MethodName: DisplayNextDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 401659197}
-        m_MethodName: DestroyCurrentDoor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &742925017
@@ -1930,6 +1885,96 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2944718948452955376}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &935212234
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1431619218}
+    m_Modifications:
+    - target: {fileID: 2944718948195412076, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_Name
+      value: StorylineTrigger2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.717
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5270436
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.84983826
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 63.612003
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.58519405
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.53168
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[0].sentence
+      value: This maze was created a long time ago. Underneath the glass you are standing
+        on, there is the greatest source of processing power in the universe.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 456cac35c737844f18a66cb6b25b27c5, type: 3}
 --- !u!1 &986143966
 GameObject:
   m_ObjectHideFlags: 0
@@ -2099,68 +2144,6 @@ Transform:
   m_Father: {fileID: 749261687}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -10, z: 0}
---- !u!1 &1111204698
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1111204699}
-  - component: {fileID: 1111204701}
-  - component: {fileID: 1111204700}
-  m_Layer: 5
-  m_Name: StorylineTrigger2
-  m_TagString: NarrationPart
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1111204699
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1111204698}
-  m_LocalRotation: {x: -0, y: -0.2657753, z: -0, w: 0.96403503}
-  m_LocalPosition: {x: 0.716, y: 1.26, z: 2.57}
-  m_LocalScale: {x: 0.66291153, y: 2.3289, z: 0.43753797}
-  m_Children: []
-  m_Father: {fileID: 1431619218}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -30.826002, z: 0}
---- !u!114 &1111204700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1111204698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc063a9b03c4248e8b51fb01832b24a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  storylinePart:
-    dialogues:
-    - sentence: This maze was created a long time ago. Underneath the glass you are
-        standing on, there is the greatest source of processing power in the universe.
-      answers: []
---- !u!65 &1111204701
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1111204698}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1232604410
 GameObject:
   m_ObjectHideFlags: 0
@@ -2170,7 +2153,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1232604411}
-  - component: {fileID: 1232604412}
   m_Layer: 5
   m_Name: Narration
   m_TagString: Untagged
@@ -2195,31 +2177,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1232604412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1232604410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e6c3b00f55454b3e9b3305b67da7b57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  storylinePanel: {fileID: 1436166590}
-  storylineText: {fileID: 549755801}
-  storylineButtons:
-  - {fileID: 1460005425}
-  - {fileID: 1535249348}
-  - {fileID: 242522371}
-  challengePanel: {fileID: 586077516}
-  challengeText: {fileID: 986143969}
-  challengeButtons:
-  - {fileID: 2049380849}
-  - {fileID: 742925016}
-  - {fileID: 125104777}
-  charSpeed: 0.05
 --- !u!1 &1236538579
 GameObject:
   m_ObjectHideFlags: 0
@@ -2712,6 +2669,12 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!4 &1343432578 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1822516289}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1431619217
 GameObject:
   m_ObjectHideFlags: 0
@@ -2740,8 +2703,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 862641309}
-  - {fileID: 1111204699}
-  - {fileID: 380525367}
+  - {fileID: 2112750310}
+  - {fileID: 1343432578}
   m_Father: {fileID: 1232604411}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2757,6 +2720,7 @@ GameObject:
   - component: {fileID: 1436166593}
   - component: {fileID: 1436166592}
   - component: {fileID: 1436166594}
+  - component: {fileID: 1436166595}
   m_Layer: 5
   m_Name: StorylinePanel
   m_TagString: Untagged
@@ -2845,6 +2809,23 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
+--- !u!114 &1436166595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436166590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bf9f256656a24b4ea5f1bed51fe807e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textActive: {fileID: 549755801}
+  buttonsActive:
+  - {fileID: 1460005425}
+  - {fileID: 1535249348}
+  - {fileID: 242522371}
 --- !u!1 &1460005423
 GameObject:
   m_ObjectHideFlags: 0
@@ -2924,18 +2905,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1460005426}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1232604412}
-        m_MethodName: DisplayNextDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1460005426
@@ -3073,18 +3043,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1535249349}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1232604412}
-        m_MethodName: DisplayNextDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1535249349
@@ -3296,6 +3255,103 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1822516289
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1431619218}
+    m_Modifications:
+    - target: {fileID: 2944718948195412076, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_Name
+      value: StorylineTrigger3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.577
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.56538147
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.82482964
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 68.858
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.45673
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7344
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[0].sentence
+      value: "There was this man, a philosopher by the name of Socrates that had this
+        saying :\u201CI cannot teach anybody anything. I can only make them think\u201D.
+        Sufficient to say, he was not very popular."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[1].sentence
+      value: This is your first challenge here. Answer correctly and you might become
+        a little bit wiser.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 456cac35c737844f18a66cb6b25b27c5, type: 3}
 --- !u!1 &1883336985
 GameObject:
   m_ObjectHideFlags: 0
@@ -3538,18 +3594,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2049380850}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1232604412}
-        m_MethodName: DisplayNextDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2049380850
@@ -3666,6 +3711,12 @@ Transform:
   m_Father: {fileID: 629600041}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2112750310 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2944718948195412077, guid: 456cac35c737844f18a66cb6b25b27c5,
+    type: 3}
+  m_PrefabInstance: {fileID: 935212234}
+  m_PrefabAsset: {fileID: 0}
 --- !u!54 &2142147078
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3800,8 +3851,65 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 826095766922021495, guid: a4fc654acad9c459f885a37bcddf6a23,
         type: 3}
+      propertyPath: challengePart.dialogues.Array.data[0].myButtons.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 826095766922021495, guid: a4fc654acad9c459f885a37bcddf6a23,
+        type: 3}
       propertyPath: challengePart.dialogues.Array.data[0].sentence
-      value: gsdfsfds
+      value: 'There is exactly 1 false statement in the list.
+
+        There are exactly 2 false statements in the list.
+
+        There are exactly 3 false statements in the list.
+
+        Which one is the only true statement from the list above?
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 826095766922021495, guid: a4fc654acad9c459f885a37bcddf6a23,
+        type: 3}
+      propertyPath: challengePart.dialogues.Array.data[0].myButtons.Array.data[0].answer
+      value: Statement 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 826095766922021495, guid: a4fc654acad9c459f885a37bcddf6a23,
+        type: 3}
+      propertyPath: challengePart.dialogues.Array.data[0].myButtons.Array.data[0].isFalse
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 826095766922021495, guid: a4fc654acad9c459f885a37bcddf6a23,
+        type: 3}
+      propertyPath: challengePart.dialogues.Array.data[0].myButtons.Array.data[1].answer
+      value: Statement 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 826095766922021495, guid: a4fc654acad9c459f885a37bcddf6a23,
+        type: 3}
+      propertyPath: challengePart.dialogues.Array.data[0].myButtons.Array.data[2].answer
+      value: Statement 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 826095766922021495, guid: a4fc654acad9c459f885a37bcddf6a23,
+        type: 3}
+      propertyPath: challengePart.dialogues.Array.data[0].myButtons.Array.data[2].isFalse
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 826095766922021495, guid: a4fc654acad9c459f885a37bcddf6a23,
+        type: 3}
+      propertyPath: challengePart.dialogues.Array.data[1].sentence
+      value: "If  statement one is true, then, only one from the statements two and
+        three can be false. \nIf statement three is true, then all three (including
+        the statement three) statements should be false which means that statement
+        three is correct.\nTherefore statement 2 is correct!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 826095766922021495, guid: a4fc654acad9c459f885a37bcddf6a23,
+        type: 3}
+      propertyPath: challengePart.dialogues.Array.data[2].sentence
+      value: "Syllogisms are structures of sentences each of which can meaningfully
+        be called true or false: assertions (apophanseis), in Aristotle\u2019s terminology.
+        According to Aristotle, every such sentence must have the same structure:
+        it must contain a subject (hupokeimenon) and a predicate and must either affirm
+        or deny the predicate of the subject. Thus, every assertion is either the
+        affirmation kataphasis or the denial (apophasis) of a single predicate of
+        a single subject."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4fc654acad9c459f885a37bcddf6a23, type: 3}
@@ -3904,6 +4012,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
         type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[1].myButtons.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[2].myButtons.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[3].myButtons.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
       propertyPath: storylinePart.dialogues.Array.data[0].sentence
       value: 'Welcome!
 
@@ -3934,9 +4057,7 @@ PrefabInstance:
     - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
         type: 3}
       propertyPath: storylinePart.dialogues.Array.data[2].sentence
-      value: 'Why do you think you are here?
-
-'
+      value: Why do you think you are here?
       objectReference: {fileID: 0}
     - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
         type: 3}
@@ -3992,6 +4113,51 @@ PrefabInstance:
         type: 3}
       propertyPath: storylinePart.dialogues.Array.data[4].answers.Array.data[2]
       value: I will figure that out for myself.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[1].myButtons.Array.data[0].answer
+      value: I don't recognise this place.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[1].myButtons.Array.data[1].answer
+      value: I might have been.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[1].myButtons.Array.data[2].answer
+      value: It seems like a vague dream.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[2].myButtons.Array.data[0].answer
+      value: No reason in particular.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[2].myButtons.Array.data[1].answer
+      value: Why are you here?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[2].myButtons.Array.data[2].answer
+      value: I will figure that out for myself.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[3].myButtons.Array.data[0].answer
+      value: I will follow the path.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[3].myButtons.Array.data[1].answer
+      value: I will try and figure out the maze.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944718948195412079, guid: 456cac35c737844f18a66cb6b25b27c5,
+        type: 3}
+      propertyPath: storylinePart.dialogues.Array.data[3].myButtons.Array.data[2].answer
+      value: I am gonna rest here for a while.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 456cac35c737844f18a66cb6b25b27c5, type: 3}
